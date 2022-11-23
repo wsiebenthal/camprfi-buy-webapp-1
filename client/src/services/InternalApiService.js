@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: 'http://34.239.108.218/api',
 });
 
 export const getAllDevices = async () => {
