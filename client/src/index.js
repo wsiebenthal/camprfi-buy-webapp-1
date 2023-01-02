@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
         <Elements stripe={stripePromise}>
           <App />
-      </Elements> 
+        </Elements> 
     </BrowserRouter>
   </React.StrictMode>
 );

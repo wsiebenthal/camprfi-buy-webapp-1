@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { DataPlansForm } from "../components/data-plans-form/data-plans-form.component";
 
-import {
-  getDeviceById,
-} from '../services/InternalApiService';
+import { getDeviceById } from "../services/InternalApiService";
 
 export const OneDevice = (props) => {
   const [device, setDevice] = useState(null);
@@ -26,16 +25,18 @@ export const OneDevice = (props) => {
     return null;
   }
 
-
-  const { name } =
-    device;
+  const { name } = device;
 
   return (
-    <div className="w-100 mx-auto shadow mb-4 rounded border p-4">
-      <h5>Devices:</h5>
-      <h4>{name}</h4>
+    <div>
+      <div className="w-50 p-4 rounded mx-auto shadow">
+        <h5>Devices:</h5>
+        <h4>{name}</h4>
+      </div>
 
-      <div className="mt-2">
+      <div></div>
+      <div className="w-50 p-4 rounded mx-auto shadow">
+        <DataPlansForm></DataPlansForm>
       </div>
     </div>
   );

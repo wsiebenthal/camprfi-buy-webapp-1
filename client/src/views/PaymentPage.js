@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import PaymentForm from "../components/payment-form/payment-form.component";
 
-import ProductCard from "../components/product-card/product-card.component";
 
 import { getAllProducts } from "../services/InternalApiService";
 
-export const AllProducts = (props) => {
+export const PaymentPage = (props) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -26,22 +25,6 @@ export const AllProducts = (props) => {
 
     return (
         <div>
-            <h1>All Products</h1>
-
-            <div className="products-container">
-                {products.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                ))}
-            </div>
-
-            <div className="products-container">
-                {products
-                    .filter((product) => product.name.includes("10Gb for 1 Day"))
-                    .map((product) => (
-                        <ProductCard key={product.id} product={product} />
-                    ))}
-            </div>
-
             <div>
                 <PaymentForm></PaymentForm>
             </div>
@@ -49,4 +32,4 @@ export const AllProducts = (props) => {
     );
 };
 
-export default AllProducts;
+export default PaymentPage;
