@@ -38,26 +38,27 @@ h1 {
   
 } */
 
-.search-button {
-  height: 60px;
+.btn {
+  /* height: 60px; */
   margin-top: 50px;
-  width: 240px;
-  background-color: #FFB242;
-  border-radius: 40px;
-  box-shadow: 10px;
-  color: white;
-  border: none ;
+  /* width: 240px; */
+  background-color: #FFB242 !important;
+  border-radius: 40px !important;
+  box-shadow: 10px !important;
+  color: white !important;
+  border: none !important;
   
-  font-weight: 900;
-  font-size:larger;
+  font-weight: 900 !important;
+  font-size:medium !important;
   box-shadow: 3px 3px grey;
+  
   
   
 }
 
 .search-box {
   text-align: center;
-  margin-bottom: 100px;
+  margin-top: 40px;
 }
 
 .search-device-container {
@@ -211,6 +212,28 @@ code {
   margin: 0;
   color: rgba(0, 0, 0, 1);
   margin: 0;
+}
+
+
+.purple-font-underlined {
+  color: #7420BC;
+  font-weight: 2000;
+  text-decoration: underline  #7420BC 2px;
+
+}
+
+.purple-font {
+  color: #7420BC;
+
+}
+
+.white-font {
+  color: white;
+
+}
+
+.plan-div {
+  margin-bottom: 30px;
 }
 
 

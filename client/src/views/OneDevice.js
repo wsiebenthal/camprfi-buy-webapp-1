@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { DataPlansForm } from "../components/data-plans-form/data-plans-form.component";
 
 import { getDeviceById } from "../services/InternalApiService";
+import { DeviceInfo } from "../components/device-info/device-info.component";
 
 export const OneDevice = (props) => {
   const [device, setDevice] = useState(null);
@@ -29,10 +30,7 @@ export const OneDevice = (props) => {
 
   return (
     <div>
-      <div className="w-50 p-4 rounded mx-auto shadow">
-        <h5>Devices:</h5>
-        <h4>{name}</h4>
-      </div>
+    <DeviceInfo name={name}></DeviceInfo>
 
       <div></div>
       <div className="w-50 p-4 rounded mx-auto shadow">

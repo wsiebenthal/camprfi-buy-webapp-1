@@ -68,11 +68,11 @@ export const SearchDevice = (props, { history }) => {
                 setDeviceNumber(event.target.value);
               }}
               type="text"
-              className="form-control"
+              className="form-control search-box"
               placeholder="XXXXXX"
             />
           </div>
-          <button className="search-button">Choose a plan!</button>
+          <button className="btn">Choose a plan!</button>
         </form>
       </div>
 

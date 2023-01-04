@@ -58,12 +58,12 @@ export const DataPlansForm = (props) => {
 
   return (
     <div>
-      <div>
-        <h1>Daily Data Plans</h1>
+      <div className="plan-div">
+        <h4 className="purple-font-underlined">PLAN</h4>
       </div>
 
       <div className="form-group">
-        <label className="h6">How much data do you need? </label>
+        <label className="h6 purple-font">How much data do you need? </label>
         {errors?.amountOfData && (
           <span style={{ color: "red" }}> {errors?.amountOfData?.message}</span>
         )}
@@ -88,7 +88,7 @@ export const DataPlansForm = (props) => {
       </div>
 
       <div className="form-group">
-        <label className="h6">Plan Duration </label>
+        <label className="h6 purple-font">Plan Duration </label>
         {errors?.amountOfData && (
           <span style={{ color: "red" }}> {errors?.amountOfData?.message}</span>
         )}

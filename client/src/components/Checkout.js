@@ -47,11 +47,10 @@ export const Checkout = (props) => {
 
   return (
     <div className="checkout">
-      <h1>Stripe Checkout</h1>
-      <p className="checkout-title">{nickname}</p>
-      <p className="checkout-title">{priceId}</p>
+      <p className="checkout-title purple-font">{nickname}</p>
+      <p className="checkout-title purple-font">{priceId}</p>
 
-      <h1 className="checkout-price">${price}</h1>
+      <h1 className="checkout-price purple-font">${price}</h1>
 
       <button
         className="checkout-button"
